@@ -2,11 +2,12 @@
 <html>
 <head>
   <title>App</title>
-  
+
   <!-- build:css(tmp/result) assets/app.min.css -->
   <link rel="stylesheet" href="/assets/app.css">
   <!-- endbuild -->
-  
+
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 
   <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
 
@@ -29,6 +30,12 @@
   <!-- endbuild -->
 
   <!-- build:js(tmp/result) assets/app.min.js -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    window.showdown = new Showdown.converter();
+  </script>
+  <!-- build:js(tmp/public) /assets/app.min.js -->
 
     <script src="/assets/app.js"></script>
     <script src="/assets/templates.js"></script>
